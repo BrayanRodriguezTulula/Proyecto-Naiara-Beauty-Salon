@@ -1,12 +1,22 @@
 body {
-    background-color: #1a1a1a; 
-    color: #ffffff;           
+    background-color: #f5e1e2; 
+    color: #1c1c1c;          
     font-family: Arial, sans-serif; 
     margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #121212; 
     padding: 20px;
+    border-bottom: 3px solid #ff477e; 
+}
+header img {
+    display: block;
+    margin: 0 auto 10px auto;       
+    max-width: 150px;         
 }
 h1, h2 {
-    color: #d4af37;       
+    color: #121212;       
     text-align: center;       
 }
 nav ul {
@@ -27,4 +37,9 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffffff;         
+}
+footer {
+    text-align: center;     
+    color: #aaaaaa;        
+    font-size: 14px;
 }
