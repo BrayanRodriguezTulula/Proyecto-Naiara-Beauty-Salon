@@ -72,7 +72,6 @@ main {
   padding: 12px;
 }
 
-
 footer {
     background-color: #121212;
     border-top: 3px solid #ff477e;
@@ -80,4 +79,33 @@ footer {
     color: #ffffff;        
     font-size: 14px;
     padding: 16px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  .tarjeta {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #servicios li {
+    flex-basis: 100%;
+  }
 }
