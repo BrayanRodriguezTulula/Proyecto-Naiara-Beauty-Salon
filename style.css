@@ -1,14 +1,24 @@
 body {
     background-color: #f5e1e2; 
     color: #1c1c1c;          
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 header {
     background-color: #121212; 
+    color: #ffffff;
     padding: 20px;
     border-bottom: 3px solid #ff477e; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.marca {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
 }
 header img {
     display: block;
