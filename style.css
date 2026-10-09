@@ -119,4 +119,22 @@ footer {
   #servicios li {
     flex-basis: 100%;
   }
+
+  /* ACTIVAR MODO OSCURO */
+  body.oscuro{
+    background-color: dimgray;
+    color: #ffffff;
+  }
+  body.oscuro nav{
+    background-color: gray;
+  }
+
+body.oscuro .tarjeta{
+  background-color: gray;
+  border-color: #ffffff;
+}
+body.oscuro .tarjeta h2{
+  color: #ce1b89;
+}
+
 }
