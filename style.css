@@ -15,6 +15,17 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.boton-modo{
+  margin-left: 10px;
+  background-color: darkslategrey;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font: inherit;
+  font-weight: bold;
+}
 .marca {
   font-size: 45px;
   font-weight: bold;
