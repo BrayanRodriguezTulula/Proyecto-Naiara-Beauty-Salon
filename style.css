@@ -83,6 +83,43 @@ main {
   padding: 12px;
 }
 
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 4px;
+  color: #030303;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2b4530;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+  background-color: #fdfbfd;
+  color: #050505;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #420121;
+}
+
+form button {
+  display: grid;
+  margin-top: 14px;
+  background-color: #ff8f3c;
+  color: #1a1208;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font: inherit;
+  font-weight: bold;
+  justify-content: center;
+}
+
 footer {
     background-color: #121212;
     border-top: 3px solid #ff477e;
