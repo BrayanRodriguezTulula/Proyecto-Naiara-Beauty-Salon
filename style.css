@@ -130,7 +130,7 @@ footer {
 /* ACTIVAR MODO OSCURO */
   body.oscuro{
     background-color: dimgray;
-    color: #ffffff;
+    color: #000000;
   }
   body.oscuro nav{
     background-color: gray;
@@ -138,11 +138,12 @@ footer {
 
 body.oscuro .tarjeta{
   background-color: gray;
-  border-color: #ffffff;
+  border-color: #ce1b89;
 }
 body.oscuro .tarjeta h2{
   color: #ce1b89;
 }
+
 
 @media (max-width: 600px) {
   header {
