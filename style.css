@@ -163,7 +163,7 @@ body.oscuro nav {
 }
 
 body.oscuro .hamburguesa {
-  background-color: #7d2e70;
+  background-color: #381632;
   color: #ffffff;
   border-color: #5e1b59;
 }
@@ -200,6 +200,10 @@ body.oscuro form textarea::placeholder {
 
 
 @media (max-width: 600px) {
+  #btn-menu {
+    display: block;
+  }
+
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -207,9 +211,13 @@ body.oscuro form textarea::placeholder {
   }
 
   nav ul {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 10px;
+  } 
+  nav ul.abierto {
+    display: flex;
   }
 
   main {
