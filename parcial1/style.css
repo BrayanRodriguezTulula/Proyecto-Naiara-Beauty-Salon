@@ -77,3 +77,23 @@ form textarea{
     color: #2d5a3f;
     font-weight: bold;
 }
+footer {
+    background-color: #2d5a3f;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .tarjeta {
+        padding: 14px;
+    }
+}
