@@ -51,5 +51,29 @@ form label{
 }
 form input,
 form textarea{
-    
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4dfd7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font: inherit;
+}
+#btn-confirmar {
+    margin-top: 14px;
+    background-color: #d94f70;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+#mensaje{
+    margin-top: 14px;
+    padding: 10px 14px;
+    background-color: #eaf5ee;
+    border-left: 4px solid #2d5a3f;
+    color: #2d5a3f;
+    font-weight: bold;
 }
