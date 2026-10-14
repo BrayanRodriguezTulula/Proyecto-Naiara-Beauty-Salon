@@ -23,3 +23,28 @@ function alternarMenu() {
 }
 
 botonMenu.addEventListener("click", alternarMenu);
+
+
+const formularioContacto = document.querySelector("#form-contacto");
+const avisoContacto = document.querySelector("#error-contacto");
+
+function revisarContacto(event){
+    event.preventDefault();
+    const nombre = document.querySelector("#nombre").value;
+    const correo = document.querySelector("#correo").value;
+
+    if(nombre === ""){
+        avisoContacto.textContent = "Agregue su nombre.";
+        avisoContacto.classList.add("error");
+        avisoContacto.classList.remove("exito");
+    }else if (correo.includes("@")=== false) {
+        avisoContacto.textContent = "al correo le hace falta el: @";
+        avisoContacto.classList.add("error");
+        avisoContacto.classList.remove("exito");
+    }else{
+        avisoContacto.textContent = "Comentario recibido, nos contactaremos contigo en la brevedad posible.";
+        avisoContacto.classList.add("error");
+        avisoContacto.classList.remove("exito");
+    }
+}
+formularioContacto.addEventListener("submit", revisarContacto);
