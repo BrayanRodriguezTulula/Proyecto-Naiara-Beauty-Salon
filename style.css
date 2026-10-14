@@ -143,6 +143,20 @@ form button {
   font-weight: bold;
 }
 
+.aviso{
+  display: none;
+  margin-top: 14px;
+}
+.aviso.error{
+  display: block;
+  color: red;
+}
+.aviso.exito{
+  display: block;
+  color: green;
+}
+
+
 footer {
   background-color: #121212;
   border-top: 3px solid #ff477e;
