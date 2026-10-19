@@ -159,6 +159,8 @@ form button {
 .aviso.exito{
   display: block;
   color: green;
+  background-color: #2b4530;
+  border-left: 4px solid #3fbf6a;
 }
 
 

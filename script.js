@@ -25,6 +25,8 @@ function alternarMenu() {
 botonMenu.addEventListener("click", alternarMenu);
 
 
+
+
 const formularioContacto = document.querySelector("#form-contacto");
 const avisoContacto = document.querySelector("#error-contacto");
 
@@ -34,17 +36,17 @@ function revisarContacto(event){
     const correo = document.querySelector("#correo").value;
 
     if(nombre === ""){
-        avisoContacto.textContent = "Agregue su nombre.";
+        avisoContacto.textContent = "¡Agregue su nombre completo al formulario!";
         avisoContacto.classList.add("error");
         avisoContacto.classList.remove("exito");
     }else if (correo.includes("@")=== false) {
-        avisoContacto.textContent = "al correo le hace falta el: @";
+        avisoContacto.textContent = "¡ERROR! Agregue un correo valido.";
         avisoContacto.classList.add("error");
         avisoContacto.classList.remove("exito");
     }else{
         avisoContacto.textContent = "Comentario recibido, nos contactaremos contigo en la brevedad posible.";
-        avisoContacto.classList.add("error");
-        avisoContacto.classList.remove("exito");
+        avisoContacto.classList.add("exito");
+        avisoContacto.classList.remove("error");
     }
 }
 formularioContacto.addEventListener("submit", revisarContacto);
