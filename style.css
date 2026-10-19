@@ -19,7 +19,7 @@ header {
 }
 
 .boton-modo {
-  margin-left: 10px;
+  margin-left: 0px;
   background-color: darkslategrey;
   color: #ffffff;
   border: none;
@@ -27,6 +27,8 @@ header {
   padding: 8px 18px;
   font: inherit;
   font-weight: bold;
+  width: 160px;
+  text-align: center;
 }
 
 .marca {
