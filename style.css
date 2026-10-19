@@ -146,10 +146,15 @@ form button {
 .aviso{
   display: none;
   margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-weight: bold;
 }
 .aviso.error{
   display: block;
   color: red;
+  background-color: black;
+  border-left: 4px solid #e0558f;
 }
 .aviso.exito{
   display: block;
