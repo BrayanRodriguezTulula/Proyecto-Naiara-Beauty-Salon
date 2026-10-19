@@ -152,15 +152,15 @@ form button {
 }
 .aviso.error{
   display: block;
-  color: red;
-  background-color: black;
-  border-left: 4px solid #e0558f;
+  background-color: #ffe6e6;
+  color: #8a1c1c;
+  border-left: 4px solid #f04e91;
 }
 .aviso.exito{
   display: block;
-  color: green;
-  background-color: #2b4530;
-  border-left: 4px solid #3fbf6a;
+  color: #1b5e20;
+  background-color: #e6f6ea;
+  border-left: 4px solid #2e7d32;
 }
 
 
@@ -211,12 +211,22 @@ body.oscuro form input,
 body.oscuro form textarea {
   background-color: #e7e7e6;
   border-color: #cfe0d1;
-  color: #ffffff;
 }
 
 body.oscuro form input::placeholder,
 body.oscuro form textarea::placeholder {
   color: #696969;
+}
+
+body.oscuro .aviso.error {
+  color: #ffb4b4;
+  background-color: #3a1414;
+  border-left: 4px solid #f04e91;
+}
+body.oscuro .aviso.exito {
+  background-color: #14301b;
+  color: #b7f0c4;
+  border-left: 4px solid #3fbf6a;
 }
 
 
