@@ -9,5 +9,16 @@ if (nombre === "" || correo === "") {
     avisoTurno.textContent = "Nos falta tu nombre y tu correo para darte el turno.";
     avisoTurno.classList.add("error");
     avisoTurno.classList.remove("exito");
+  }else if (correo.includes("@") === false) {
+    event.preventDefault();
+    avisoTurno.textContent = "Revisa tu correo - le falta el arroba.";
+    avisoTurno.classList.add("error");
+    avisoTurno.classList.remove("exito");
+  } else {
+    avisoTurno.textContent = "Turno reservado - te atiende Brayan Rodriguez Tulula";
+    avisoTurno.classList.add("exito");
+    avisoTurno.classList.remove("error");
   }
 }
+
+formularioTurno.addEventListener("submit", revisarTurno);
