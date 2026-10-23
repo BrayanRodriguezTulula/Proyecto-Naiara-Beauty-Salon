@@ -1,0 +1,274 @@
+body {
+  background-color: #f5e1e2;
+  color: #1c1c1c;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #121212;
+  color: #ce1b89;
+  padding: 20px;
+  border-bottom: 3px solid #ff477e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boton-modo {
+  margin-left: 0px;
+  background-color: darkslategrey;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font: inherit;
+  font-weight: bold;
+  width: 160px;
+  text-align: center;
+}
+
+.marca {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: #121212;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.hamburguesa {
+  margin: 0 auto 8px;
+  background-color: #381632;
+  color: #cfe3d1;
+  border: 1px solid #452b43;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border: 1px solid #b9a4b2;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  color: #000000;
+  border-bottom: 3px solid #ff477e;
+  padding-bottom: 6px;
+}
+
+#servicios ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#servicios li {
+  flex: 1 1 160px;
+  background-color: #f6f3ee;
+  border: 1px solid #ad9e84;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 4px;
+  color: #030303;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2b4530;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+  background-color: #fdfbfd;
+  color: #050505;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #420121;
+}
+
+form button {
+  margin-top: 14px;
+  background-color: #ff8f3c;
+  color: #1a1208;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font: inherit;
+  font-weight: bold;
+}
+
+.aviso{
+  display: none;
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+.aviso.error{
+  display: block;
+  background-color: #ffe6e6;
+  color: #8a1c1c;
+  border-left: 4px solid #f04e91;
+}
+.aviso.exito{
+  display: block;
+  color: #1b5e20;
+  background-color: #e6f6ea;
+  border-left: 4px solid #2e7d32;
+}
+
+
+footer {
+  background-color: #121212;
+  border-top: 3px solid #ff477e;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 16px;
+}
+
+/* ACTIVAR MODO OSCURO */
+body.oscuro {
+  background-color: dimgray;
+  color: #000000;
+}
+
+body.oscuro nav {
+  background-color: rgb(0, 0, 0);
+}
+
+body.oscuro .hamburguesa {
+  background-color: #381632;
+  color: #ffffff;
+  border-color: #5e1b59;
+}
+
+body.oscuro .tarjeta {
+  background-color: gray;
+  border-color: #ce1b89;
+}
+
+body.oscuro .tarjeta h1 {
+  color: #ffffff;
+}
+
+body.oscuro .tarjeta h2 {
+  color: #ffffff;
+}
+body.oscuro .tarjeta p {
+  color: #ffffff;
+}
+body.oscuro form label {
+  color: #ffffff;
+}
+body.oscuro form input,
+body.oscuro form textarea {
+  background-color: #e7e7e6;
+  border-color: #cfe0d1;
+}
+
+body.oscuro form input::placeholder,
+body.oscuro form textarea::placeholder {
+  color: #696969;
+}
+
+body.oscuro .aviso.error {
+  color: #ffb4b4;
+  background-color: #3a1414;
+  border-left: 4px solid #f04e91;
+}
+body.oscuro .aviso.exito {
+  background-color: #14301b;
+  color: #b7f0c4;
+  border-left: 4px solid #3fbf6a;
+}
+
+
+@media (max-width: 600px) {
+  #btn-menu {
+    display: block;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  } 
+  nav ul.abierto {
+    display: flex;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  .tarjeta {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #servicios li {
+    flex-basis: 100%;
+  }
+
+
+
+}
